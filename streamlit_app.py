@@ -1,13 +1,13 @@
 import streamlit as st
 
-st.set_page_config(page_title="Vitamin Shoppe Demo", page_icon="🌀", layout="centered")
+st.set_page_config(page_title="Vitamin Shoppe Demo", page_icon="🏀", layout="centered")
 
 from utils import gui
 
-# gui.icon("🌀")
+# gui.icon("🏀")
 
 st.image(
-    "https://www.newhope.com/sites/newhope360.com/files/vitaminshoppe-logo-2018-promo.png",
+    "https://s3.amazonaws.com/appforest_uf/f1645050160993x340144886538052540/Cerebro%20Logo%20Black-J8AG.png",
     width=300, # Manually Adjust the width of the image as per requirement
    )
 
@@ -15,12 +15,11 @@ st.image(
 for key in st.session_state:
     st.session_state[key] = st.session_state[key]
 
-st.title("Welcome to the VS Customer Insights app!")
-st.sidebar.text(f"Account: {st.secrets.sf_usage_app.account}")
+st.title("Cerebro Roadmap")
 st.sidebar.info("Choose a page!")
 st.markdown(
     """
-This app provides insights on a Vitamin Shoppe's customers
+This front-end can be used to create/monitor product enhancemants and submit any bugs. 
 ### Get started!
 👈 Select a page in the sidebar!
     """
