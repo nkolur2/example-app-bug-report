@@ -85,6 +85,7 @@ with form:
     date = cols[0].date_input("Submission Date")
     bug_severity = cols[1].selectbox(
         "Timeline", ["Short-term", "Medium-Term","Long-Term"], index=2
+    )    
     submitted = st.form_submit_button(label="Submit")
 
 
