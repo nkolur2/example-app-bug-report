@@ -78,7 +78,7 @@ with form:
     cols = st.columns((1, 1))
     author = cols[0].text_input("Report author:")
     bug_type = cols[1].selectbox(
-        "Feature Type:", ["Front-end", "Back-end",], index=2
+        "Feature Type:", ["Front-end", "Back-end",], index=1
     )
     comment = st.text_area("Comment:")
     cols = st.columns(2)
