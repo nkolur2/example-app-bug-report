@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Vitamin Shoppe Demo", page_icon="🏀", layout="centered")
+st.set_page_config(page_title="Cerebro Roadmap", page_icon="🏀", layout="centered")
 
 from utils import gui
 
