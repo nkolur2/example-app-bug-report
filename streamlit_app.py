@@ -16,11 +16,11 @@ for key in st.session_state:
     st.session_state[key] = st.session_state[key]
 
 st.title("Cerebro Roadmap")
-st.sidebar.info("Choose a page!")
+st.sidebar.info("Choose a page")
 st.markdown(
     """
 This front-end can be used to create/monitor product enhancemants and submit any bugs. 
 ### Get started!
-👈 Select a page in the sidebar!
+👈 Select a page in the sidebar
     """
 )
