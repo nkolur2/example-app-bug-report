@@ -2,9 +2,7 @@ import datetime
 import math
 
 import pandas as pd
-import sqlparse
 import streamlit as st
-from millify import millify
 
 BLUE_COLOR = "#1c83e1"
 
@@ -159,12 +157,7 @@ def pretty_print_seconds(seconds: int) -> str:
     return pretty_print
 
 
-def pretty_print_sql_query(query: str) -> str:
-    return sqlparse.format(
-        query,
-        reindent=True,
-        keyword_case="upper",
-    )
+
 
 
 if __name__ == "__main__":
