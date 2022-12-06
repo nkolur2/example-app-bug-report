@@ -78,7 +78,7 @@ def transform_row(row):
     return {
         "id": row["Author"],
         "content": row["Description"],
-        "date": row["Expected Completion Date:"]
+        "start": row["Expected Completion Date:"]
     }
 
 # Apply the function to each row of the DataFrame
