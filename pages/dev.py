@@ -81,7 +81,7 @@ def transform_row(row):
 
 # Apply the function to each row of the DataFrame
 items = df1.apply(transform_row, axis=1).tolist()
-
+st.write(items)
 timeline = st_timeline(items, groups=[], options={}, height="300px")
 st.subheader("Selected item")
 st.write(timeline)
