@@ -1,15 +1,15 @@
 import streamlit as st
+from streamlit_timeline import st_timeline
 
 st.set_page_config(page_title="Cerebro Roadmap", page_icon="🏀", layout="centered")
+
 
 from utils import gui
 
 # gui.icon("🏀")
 
-import streamlit as st
-from streamlit_timeline import st_timeline
 
-st.set_page_config(layout="wide")
+
 
 items = [
     {"id": 1, "content": "2022-10-20", "start": "2022-10-20"},
