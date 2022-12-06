@@ -75,8 +75,8 @@ st.write(df1)
 def transform_row(row):
     return {
         "id": row["id"],
-        "content": row["date"],
-        "start": row["date"]
+        "content": row["Comments"],
+        "date": row["Date"]
     }
 
 # Apply the function to each row of the DataFrame
