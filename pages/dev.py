@@ -5,6 +5,8 @@ import streamlit as st
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import HttpRequest
+from streamlit_timeline import st_timeline
+
 
 SCOPE = "https://www.googleapis.com/auth/spreadsheets"
 SPREADSHEET_ID = "13VnmnkJt_P-z1RJ6iWh87kIkE9n-zJr3HfpkzB4wkxY"
