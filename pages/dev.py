@@ -69,4 +69,5 @@ def add_row_to_gsheet(gsheet_connector, row) -> None:
 gsheet_connector = connect_to_gsheet()
 
 df = get_data(gsheet_connector)
-st.write(df)
+df1 = df[["Author","Description","Expected Completion Date:"]]
+st.write(df1)
