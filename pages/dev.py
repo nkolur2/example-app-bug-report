@@ -71,3 +71,10 @@ gsheet_connector = connect_to_gsheet()
 df = get_data(gsheet_connector)
 df1 = df[["Author","Description","Expected Completion Date:"]]
 st.write(df1)
+
+
+items = [df1]
+
+timeline = st_timeline(items, groups=[], options={}, height="300px")
+st.subheader("Selected item")
+st.write(timeline)
